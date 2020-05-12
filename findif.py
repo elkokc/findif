@@ -6,7 +6,7 @@ from walker import walker
 
 
 settings = {
-    "path" : "/Users/elkokc/utlis/findidf/bitrix/",
+    "path" : "/tmp/project/",
     "extension" : ".js",
     "pattern" : "doCall\(\s*'(.*?)',",
     "mode" : "findif"
@@ -14,7 +14,7 @@ settings = {
 
 if (len(sys.argv) > 1):
     console_mode = True
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser = argparse.ArgumentParser(description='Command line mode')
     parser.add_argument('--path', type=str,
                         help='root directory ( it goes recursive)')
     parser.add_argument('--extension', '-e', type=str,
